@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug NachOS",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/yangshuo/os/Nachos-3.4-SDU (for lecture)/code/lab7-8/nachos",  // 替换为你的 nachos 可执行文件路径
+            "args": ["-f", ""],               // 运行参数（如要测试的程序）
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            //"preLaunchTask": "build-nachos"  // 可选：调试前自动编译（需配置 tasks.json）
+        }
+    ]
+}
